@@ -13,10 +13,11 @@ html{
 }
 
 body{
-    font-family:'Poppins',sans-serif;
-    color:#1f2937;
+    font-family:var(--font-body);
+    color:var(--text-color);
     background:#ffffff;
     overflow-x:hidden;
+    font-size:var(--font-size-base);
 }
 
 img{
@@ -41,8 +42,18 @@ ul{
     --primary:#0F172A;
     --secondary:#4F46E5;
     --text:#1F2937;
+    --text-color:#1f2937;
+    --muted-color:#6b7280;
     --light:#ffffff;
     --border:#e5e7eb;
+    --heading-color:#111827;
+
+    --font-body:'Poppins',sans-serif;
+    --font-heading:'Playfair Display',serif;
+    --font-size-base:16px;
+    --font-size-sm:15px;
+    --font-size-md:17px;
+    --font-size-lg:24px;
 
     --shadow:
         0 10px 40px rgba(0,0,0,.08);
@@ -322,7 +333,7 @@ ul{
 
     .logo img{
 
-        width:130px;
+        width:70px;
 
     }
 
@@ -427,13 +438,13 @@ ul{
 
 .hero-content h1{
 
-    font-family:'Playfair Display',serif;
+    font-family:var(--font-heading);
 
     font-size:82px;
 
     line-height:1.05;
 
-    color:#111;
+    color:var(--heading-color);
 
     margin-bottom:28px;
 
@@ -447,11 +458,11 @@ ul{
 
 .hero-content p{
 
-    font-size:24px;
+    font-size:var(--font-size-lg);
 
     line-height:1.7;
 
-    color:#555;
+    color:var(--muted-color);
 
     max-width:810px;
 
@@ -610,7 +621,7 @@ ul{
 
 height:auto;
 
-padding:140px 0 80px;
+padding:200px 0 80px;
 
 }
 
@@ -784,13 +795,13 @@ grid-template-columns:1fr;
 
 .about-content h2{
 
-    font-family:"Playfair Display",serif;
+    font-family:var(--font-heading);
 
     font-size:54px;
 
     line-height:1.15;
 
-    color:#111827;
+    color:var(--heading-color);
 
     margin-bottom:25px;
 
@@ -1035,10 +1046,10 @@ line-height:1.25;
 }
 
 .section-title h2{
-    font-family:'Playfair Display',serif;
-    font-size:48px;
+    font-family:var(--font-heading);
+    font-size:clamp(30px, 3vw, 48px);
     color:var(--primary);
-   width: 70%;
+    width: 70%;
     margin: 20px auto;
 }
 
@@ -1193,7 +1204,7 @@ line-height:1.25;
 
     #products{
 
-        padding:80px 0;
+        padding:0px 0;
 
     }
 
@@ -1407,7 +1418,7 @@ line-height:1.25;
 
     #why-us{
 
-        padding:80px 0;
+        padding:40px 0;
 
     }
 
@@ -1765,7 +1776,7 @@ line-height:1.25;
 
     #contact{
 
-        padding:80px 0;
+        padding:40px 0;
 
     }
 
@@ -2064,6 +2075,8 @@ line-height:1.25;
 
     }
 
+    .footer-logo{margin:20px auto;}
+
     .footer-grid{
 
         grid-template-columns:1fr;
@@ -2101,7 +2114,7 @@ line-height:1.25;
 ===============================*/
 
 .portfolio-section {
-    padding: 00px 0;
+    
     background: #fff;
     overflow: hidden;
 }
@@ -2136,18 +2149,17 @@ line-height:1.25;
 }
 
 .section-heading h2 {
-    font-size: 52px;
+    font-family: var(--font-heading);
+    font-size: clamp(34px, 3vw, 52px);
     line-height: 1.15;
     font-weight: 700;
-    color: #121212;
+    color: var(--heading-color);
     margin-bottom: 18px;
 }
 
-
-
 .section-heading p {
-    color: #6b7280;
-    font-size: 17px;
+    color: var(--muted-color);
+    font-size: var(--font-size-md);
     line-height: 1.8;
 }
 
@@ -2437,7 +2449,7 @@ line-height:1.25;
 ==========================*/
 
 .process-section {
-    padding: 120px 0;
+     padding: 120px 0;
     background: #fff;
 }
 
@@ -2451,26 +2463,12 @@ line-height:1.25;
    Heading
 ==========================*/
 
-.section-heading {
-    text-align: center;
+.process-section .section-heading {
     max-width: 700px;
     margin: 0 auto 70px;
 }
 
-.section-tag {
-    display: inline-block;
-    padding: 8px 18px;
-    background: #eef2ff;
-    color: #4f46e5;
-    font-size: 13px;
-    font-weight: 600;
-    border-radius: 50px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 18px;
-}
-
-.section-heading h2 {
+.process-section .section-heading h2 {
     font-size: 56px;
     font-weight: 700;
     color: #122C4D;
@@ -2478,17 +2476,11 @@ line-height:1.25;
     line-height: 1.15;
 }
 
-.section-heading h2 span {
-        color: #4f46e5;
+.process-section .section-heading h2 span {
+    color: #4f46e5;
 }
 
-.heading-line {
-    width: 65px;
-    height: 3px;
-    background: #4F46E5;
-    border-radius: 50px;
-    margin: auto;
-}
+
 
 /*==========================
    Grid
@@ -2608,8 +2600,11 @@ line-height:1.25;
 @media (max-width: 767px) {
 
     .process-section {
-        padding: 70px 0;
+        padding: 40px 0;
     }
+
+    .process-section .section-heading h2 {
+    font-size: 34px;}
 
     .section-heading {
         margin-bottom: 50px;
