@@ -441,7 +441,7 @@ ul{
 
 .hero-content h1 span{
 
-    color:#7a90a8;
+    color: #000f50;
 
 }
 
@@ -798,13 +798,13 @@ grid-template-columns:1fr;
 
 .about-content h2 span{
 
-    color:#7b8ea6;
+       color: #4f46e5;
 
 }
 
 .about-content>p{
 
-    font-size:18px;
+    font-size:14px;
 
     line-height:1.9;
 
@@ -1031,7 +1031,7 @@ line-height:1.25;
     font-size:14px;
     font-weight:600;
     letter-spacing:1px;
-    margin-bottom:18px;
+  
 }
 
 .section-title h2{
@@ -1042,7 +1042,9 @@ line-height:1.25;
     margin: 20px auto;
 }
 
-
+#products .section-title h2 span {
+    color: #4f46e5; font-size: 48px;padding: 0; 
+}
 .section-title p{width: 75%; margin: 0 auto;}
 
 /*======================================
@@ -1247,7 +1249,7 @@ line-height:1.25;
 #why-us .section-title{
     text-align:center;
     max-width:700px;
-    margin:0 auto 70px;
+    margin:0 auto 10px;
 }
 
 #why-us .section-title span{
@@ -1259,7 +1261,6 @@ line-height:1.25;
     font-size:14px;
     font-weight:600;
     letter-spacing:1px;
-    margin-bottom:18px;
 }
 
 #why-us .section-title h2{
@@ -1268,6 +1269,16 @@ line-height:1.25;
     color:var(--primary);
     margin-bottom:20px;
 }
+
+#why-us .section-title h2 span{
+    font-family:'Playfair Display',serif;
+    font-size:48px;
+    color: #4f46e5;
+    padding: 0;
+    background: none;
+}
+
+
 
 #why-us .section-title p{
     font-size:17px;
@@ -1437,7 +1448,7 @@ line-height:1.25;
 ======================================*/
 
 #contact{
-    padding:120px 0;
+    padding-bottom:120px;
     background:#f8fbff;
     position:relative;
     overflow:hidden;
@@ -2090,7 +2101,7 @@ line-height:1.25;
 ===============================*/
 
 .portfolio-section {
-    padding: 100px 0;
+    padding: 00px 0;
     background: #fff;
     overflow: hidden;
 }
@@ -2132,9 +2143,7 @@ line-height:1.25;
     margin-bottom: 18px;
 }
 
-.section-heading h2 span {
-    color: #91A4C3;
-}
+
 
 .section-heading p {
     color: #6b7280;
@@ -2420,12 +2429,15 @@ line-height:1.25;
 
 }
 
+
+
+
 /*==========================
    Our Process Section
 ==========================*/
 
 .process-section {
-    padding: 100px 0;
+    padding: 120px 0;
     background: #fff;
 }
 
@@ -2467,7 +2479,7 @@ line-height:1.25;
 }
 
 .section-heading h2 span {
-    color: #91A4C3;
+        color: #4f46e5;
 }
 
 .heading-line {
