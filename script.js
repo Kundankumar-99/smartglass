@@ -139,3 +139,9 @@ lightbox.addEventListener("click", function () {
     lightbox.classList.remove("show");
 
 });
+
+// Form Submission
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Form submitted successfully!");
+});

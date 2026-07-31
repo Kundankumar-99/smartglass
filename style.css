@@ -903,7 +903,7 @@ grid-template-columns:1fr;
 
     font-size:28px;
 
-    color:#6b7c93;
+    color: #4f46e5;
 
 }
 
@@ -1031,6 +1031,10 @@ line-height:1.25;
 .section-title{
     text-align:center;
     margin-bottom:70px;
+}
+
+section#products {
+    padding-bottom: 80px;
 }
 
 .section-title span{
@@ -1249,8 +1253,8 @@ line-height:1.25;
 ======================================*/
 
 #why-us{
-    padding:120px 0;
-    background:#ffffff;
+    padding:80px 0;
+    background: rgb(238 246 255);
 }
 
 /*======================================
@@ -1260,13 +1264,13 @@ line-height:1.25;
 #why-us .section-title{
     text-align:center;
     max-width:700px;
-    margin:0 auto 10px;
+    margin:0 auto 50px;
 }
 
 #why-us .section-title span{
     display:inline-block;
     padding:8px 18px;
-    background:#eef6ff;
+    background: #0000000a;
     color:var(--secondary);
     border-radius:30px;
     font-size:14px;
@@ -1387,6 +1391,7 @@ line-height:1.25;
     color:var(--primary);
 
     margin-bottom:15px;
+    font-family: 'Playfair Display', serif;
 
 }
 
@@ -2117,6 +2122,7 @@ line-height:1.25;
     
     background: #fff;
     overflow: hidden;
+    padding-top: 80px;
 }
 
 .portfolio-section .container {
